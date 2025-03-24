@@ -7,7 +7,8 @@ async function main() {
 
   await farena.waitForDeployment();
 
-  console.log("Farena deployed to:", farena.address);
+  const contractAddress = await farena.getAddress();
+  console.log("Farena deployed to:", contractAddress);
 }
 
 main()
